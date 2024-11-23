@@ -1,9 +1,10 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { fetchData } from './lib/api';
+import { Data18kRadio } from './lib/entities';
 
-const page = () => {
-    const [data, setData] = useState([]);
+const Page = () => {
+    const [data, setData] = useState<Data18kRadio | undefined>();
     const [loading, setLoading] = useState(true);
 
     const getData = async () => {
@@ -16,6 +17,9 @@ const page = () => {
         getData();
 
     }, [])
+    if (!data) {
+        return null; // Render nothing or a loading state
+    }
     return (
 
         <div className='flex flex-col items-center justify-center'>
@@ -40,4 +44,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Page;
