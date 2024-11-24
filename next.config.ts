@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   basePath: "/18k-radio.github.io",
-  distDir: "build",
+  distDir: "docs",
   output: "export",
   reactStrictMode: true,
   images: {
