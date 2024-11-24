@@ -30,6 +30,9 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           static_site_generator: next
+          
+      - name: Install Dependencies with Bun 🔧
+        run: bun install
 
       - name: Build with Next.js using Bun 🏗️
         run: bun run build
