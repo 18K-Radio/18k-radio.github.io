@@ -37,9 +37,11 @@ jobs:
       - name: Build with Next.js using Bun 🏗️
         run: bun run build
 
+      - name : Check Path
+        run: pwd
+
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
-        run: pwd
         with:
           path: ./out
 
