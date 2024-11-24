@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  basePath: "/",
   distDir: "build",
   output: "export",
   reactStrictMode: true,
