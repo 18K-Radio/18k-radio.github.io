@@ -32,7 +32,7 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js using Bun 🏗️
-        run: bun run next build
+        run: bun run build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
