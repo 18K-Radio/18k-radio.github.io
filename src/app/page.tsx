@@ -36,7 +36,7 @@ const Page = () => {
                 <div className='flex flex-col justify-center items-center'>
                     <figure className=' w-full sm:w-2/3'>
                         <h1 className="text-3xl text-left tracking-wide p-2 font-bold">ประวัติ</h1>
-                        <p className="p-2">{!loading ? data.lang?.th?.story : <span className="loading loading-ball loading-md"></span>}</p>
+                        <p className="p-4 bg-base-200 rounded-xl">{!loading ? data.lang?.th?.story : <span className="loading loading-ball loading-md"></span>}</p>
                     </figure>
                 </div>
             </div>

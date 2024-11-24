@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: "/18k-radio.github.io",
-  output: "export",
+  // basePath: "/18k-radio.github.io",
+  // output: "export",
   reactStrictMode: true,
   images: {
     remotePatterns: [
