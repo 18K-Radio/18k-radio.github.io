@@ -49,7 +49,8 @@ export default function History() {
                     <div className="carousel w-full">
                         {!loading && data.images?.map((image: ImageData, index: number) => (
                             image.cover && <div key={index} id={`image-${index + 1}`} className="carousel-item w-full">
-                                <Image src={image.cover || ''} alt='Cover' width={500} height={500} className="w-full rounded-xl" />
+                                <Image src={image.cover || ''} alt='Cover' loading={"lazy"} width={500} height={100}
+                                     className="w-full rounded-xl" />
                             </div>
                         ))}
                     </div>
