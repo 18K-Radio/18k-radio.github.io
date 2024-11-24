@@ -41,12 +41,12 @@ jobs:
         run: bun run build
 
       - name : Check Path
-        run: pwd && ls -a && cd .. && ls -a
+        run: pwd && ls -a
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./.next
 
   deploy:
     environment:
