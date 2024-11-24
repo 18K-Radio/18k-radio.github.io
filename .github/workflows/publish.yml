@@ -38,7 +38,7 @@ jobs:
         run: bun run build
 
       - name : Check Path
-        run: pwd
+        run: pwd && ls
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
