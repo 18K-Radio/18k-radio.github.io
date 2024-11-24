@@ -30,7 +30,7 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           static_site_generator: next
-          
+
       - name: Install Dependencies with Bun 🔧
         run: bun install
 
@@ -39,6 +39,7 @@ jobs:
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
+        run: pwd
         with:
           path: ./out
 
